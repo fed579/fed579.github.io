@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="github練習">
-<meta name="keywords" content="github練習">
-<title>github練習</title>
+<meta name="description" content="PWA練習">
+<meta name="keywords" content="PWA練習">
+<title>PWA練習</title>
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
 
@@ -16,12 +16,50 @@
 	<header><h1>test title</h1></header>
 	<main>
 		<p>test</p>
-		<figure><img src="sample.jpg" alt="image" width="100%"></figure>
+		<figure>
+		<img src="sample1.jpg" alt="image" width="100%">
+		<img src="sample2.jpg" alt="image" width="100%">
+		<img src="sample3.jpg" alt="image" width="100%">
+		<img src="sample4.jpg" alt="image" width="100%">
+		</figure>
+		<div class="pager">次の写真を見る</div>
 	</main>
-	<footer><p>test foot</p></footer>
+
+	<nav>
+	<ul>
+		<li><a href=""><img src="img/menu1.png" alt="menu1" width="40" height="40"></a></li>
+		<li><a href=""><img src="img/menu2.png" alt="menu1" width="40" height="40"></a></li>
+		<li><a href=""><img src="img/menu3.png" alt="menu1" width="40" height="40"></a></li>
+		<li><a href=""><img src="img/menu4.png" alt="menu1" width="40" height="40"></a></li>
+	</ul>
+	</nav>
+
 </div>
 
 <script>
+	$(function(){
+		$('figure img').hide();
+		$('figure img:eq(0)').show();
+		var num = 0;
+		$('.pager').click(function(){
+			num ++;
+			console.log(num);
+			if(num == 1){
+				$('figure img').hide();
+				$('figure img:eq(1)').show();
+			}else if(num == 2){
+				$('figure img').hide();
+				$('figure img:eq(2)').show();
+			}else if(num == 3){
+				$('figure img').hide();
+				$('figure img:eq(3)').show();
+			}else if(num == 4){
+				$('figure img').hide();
+				$('figure img:eq(0)').show();
+				num = 0;
+			}
+		});
+	});
     <!-- service workerの登録関係 -->
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service_worker.js').then(function(registration) {
