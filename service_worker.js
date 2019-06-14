@@ -1,10 +1,10 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-	'/',
-	'manifest.json',
-	'/img/',
-	'/css/'
+	'/fed579.github.io/',
+	'/fed579.github.io/manifest.json',
+	'/fed579.github.io/img/',
+	'/fed579.github.io/css/'
 ];
 
 // インストール処理
