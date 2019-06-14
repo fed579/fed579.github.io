@@ -1,8 +1,9 @@
 {
-    "short_name": "PWA",
-    "name": "PWA sample",
+    "short_name": "PWA練習",
+    "name": "PWA練習",
     "display": "standalone",
     "start_url": "index.html",
+    "theme_color": "#FFFFFF"
     "icons": [
         {
             "src": "img/icon.jpg",
