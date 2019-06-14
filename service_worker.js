@@ -4,7 +4,7 @@ var urlsToCache = [
 	'/',
 	'manifest.json',
 	'/img/',
-	'/css/
+	'/css/'
 ];
 
 // インストール処理
