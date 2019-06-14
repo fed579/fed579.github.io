@@ -15,19 +15,8 @@
 <div id="wrapper">
 	<header><h1>test title</h1></header>
 	<main>
-		<p>test</p>
-		<figure>
-		<img src="img/sample1.jpg" alt="image" width="100%">
-		<img src="img/sample2.jpg" alt="image" width="100%">
-		<img src="img/sample3.jpg" alt="image" width="100%">
-		<img src="img/sample4.jpg" alt="image" width="100%">
-		</figure>
-		<div class="pager">次の写真を見る</div>
-		
-
-		<div style="margin: 1em 5%;"><img src="img/sample2.jpg" alt="image" width="50%"></div>
-		<div style="margin: 1em 5%;"><img src="img/sample3.jpg" alt="image" width="50%"></div>
-		<div style="margin: 1em 5%;"><img src="img/sample4.jpg" alt="image" width="50%"></div>
+		<p>index4.html</p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</main>
 
 	<nav>
@@ -42,29 +31,6 @@
 </div>
 
 <script>
-	$(function(){
-		$('figure img').hide();
-		$('figure img:eq(0)').show();
-		var num = 0;
-		$('.pager').click(function(){
-			num ++;
-			console.log(num);
-			if(num == 1){
-				$('figure img').hide();
-				$('figure img:eq(1)').show();
-			}else if(num == 2){
-				$('figure img').hide();
-				$('figure img:eq(2)').show();
-			}else if(num == 3){
-				$('figure img').hide();
-				$('figure img:eq(3)').show();
-			}else if(num == 4){
-				$('figure img').hide();
-				$('figure img:eq(0)').show();
-				num = 0;
-			}
-		});
-	});
     <!-- service workerの登録関係 -->
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service_worker.js').then(function(registration) {
