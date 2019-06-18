@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-*{margin:0; padding:0; font-size: 16px;}
+*{margin:0; padding:0; font-size: 16px; box-sizing: border-box;}
 a {  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 #wrapper{width: 100%; margin:0 auto;}
-header{background-color: #ffaa99; height: 50px; }
-header h1{ text-align: center; line-height: 50px; color: #fff;}
+header{background-color: #FFF; height: 50px; border-bottom: solid 1px #EEE;}
+header h1{ text-align: center; line-height: 50px;}
 main p{ padding: 10px;}
 figure{ width: 90%; height: 60%; overflow: hidden; margin: 0 auto;}
 footer{background-color: #ffeeee;}
