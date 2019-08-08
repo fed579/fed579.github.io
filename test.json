@@ -1,17 +1,20 @@
 [
   {
   	"url": "https://www.yahoo.co.jp/",
+  	"image": "https://fed579.github.io/img/smple1.png",
     "title": "リストA",
-    "content": "コンテンツA"
+    "content": "コンテンツAテキストテキストテキスト"
   },
   {
   	"url": "https://www.goo.ne.jp/",
+  	"image": "https://fed579.github.io/img/smple2.png",
     "title": "リストB",
-    "content": "コンテンツB"
+    "content": "コンテンツBテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"
   },
   {
   	"url": "https://www.msn.com/ja-jp",
+  	"image": "https://fed579.github.io/img/smple3.png",
     "title": "リストC",
-    "content": "コンテンツC"
+    "content": "コンテンツCテキストテキストテキスト"
   }
 ]
