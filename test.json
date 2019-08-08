@@ -1,13 +1,16 @@
 [
   {
+  	"url": "https://www.yahoo.co.jp/",
     "title": "リストA",
     "content": "コンテンツA"
   },
   {
+  	"url": "https://www.goo.ne.jp/",
     "title": "リストB",
     "content": "コンテンツB"
   },
   {
+  	"url": "https://www.msn.com/ja-jp",
     "title": "リストC",
     "content": "コンテンツC"
   }
