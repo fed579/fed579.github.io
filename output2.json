@@ -1,6 +1,6 @@
   
 [
-{"id":"1","url":"https://www.yahoo.co.jp/","image":"sample1.png","title":"リストH","content":"コンテンツAテキストテキストテキスト"},
-{"id":"2","url":"https://www.goo.ne.jp/","image":"sample2.png","title":"リストFF","content":"コンテンツBテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"},
-{"id":"3","url":"https://www.msn.com/ja-jp","image":"sample3.png","title":"リストFa","content":"コンテンツCテキストテキストテキスト"}
+{"id":"1","url":"https://www.yahoo.co.jp/","image":"sample1.png","title":"リストB","content":"コンテンツAテキストテキストテキスト"},
+{"id":"2","url":"https://www.goo.ne.jp/","image":"sample2.png","title":"リストB","content":"コンテンツBテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"},
+{"id":"3","url":"https://www.msn.com/ja-jp","image":"sample3.png","title":"リストBB","content":"コンテンツCテキストテキストテキスト"}
 ]
