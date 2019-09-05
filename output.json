@@ -1,5 +1,5 @@
 [
 {"id":"1","url":"https://www.yahoo.co.jp/","image":"sample1.png","title":"リストA","content":"コンテンツAテキストテキストテキスト"},
-{"id":"2","url":"https://www.goo.ne.jp/","image":"sample2.png","title":"リストB","content":"コンテンツBテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"},
-{"id":"3","url":"https://www.msn.com/ja-jp","image":"sample3.png","title":"リストC","content":"コンテンツCテキストテキストテキスト"}
+{"id":"2","url":"https://www.goo.ne.jp/","image":"sample2.png","title":"リストA","content":"コンテンツBテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"},
+{"id":"3","url":"https://www.msn.com/ja-jp","image":"sample3.png","title":"リストA","content":"コンテンツCテキストテキストテキスト"}
 ]
