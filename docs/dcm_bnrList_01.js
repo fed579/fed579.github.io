@@ -1,13 +1,15 @@
-window.onload = function() {
+$(function(){
 	var _UA = navigator.userAgent;
 	if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1) {
 		
-		$.getJSON('https://fed579.github.io/docs/output.json' , function(data) {
+		$.getJSON('https://fed579.github.io/docs/bnrList_01.json', {
+				ts: new Date().getTime()
+			}, function(data) {
 			var
 			box1 = $('#dcm_bnrList_box01'),
 			len = data.length;
 			html = '<ul>';
-			html += '<style>#dcm_bnrList_box01 *{margin:0;padding:0;border:0;box-sizing: border-box;list-styl-type: none;text-decoration: none;}#dcm_bnrList_box01{ background-color: #FFF; width:100%;}#dcm_bnrList_box01 a{display: block;padding: 10px;overflow: hidden;}#dcm_bnrList_box01 figure{ width: 54px; height: 54px; float: left; border: solid 1px #EEE;}#dcm_bnrList_box01 figure + div{ padding-left: 10px; display: table-cell; vertical-align: middle; height: 54px;}#dcm_bnrList_box01 figure + div p:first-of-type{font-size: 14px; color:#0044CC; font-weight: bold; text-decoration: underline;line-height: 1.2em; margin-bottom:4px;}#dcm_bnrList_box01 figure + div p:nth-of-type(2){font-size: 12px; color:#000;line-height: 1.2em; margin-bottom:0;}</style>';
+			html += '<style>#dcm_bnrList_box01 *{margin:0;padding:0;border:0;box-sizing: border-box;list-styl-type: none;text-decoration: none; box-sizing: content-box;}#dcm_bnrList_box01{ padding: 10px;}#dcm_bnrList_box01 li{margin-bottom: 5px; display: table; width: 100%;}#dcm_bnrList_box01 li:last-child{margin-bottom:0;}#dcm_bnrList_box01 a{display: block; width: 100%; padding: 10px; overflow: hidden; border-radius: 5px; border: solid 1px #CCC; background-color: #FFF; box-sizing: border-box;}#dcm_bnrList_box01 figure{ display: table-cell;width: 52px; height: 52px; float: left; border: solid 1px #ccc;}#dcm_bnrList_box01 figure + div{ padding-left: 10px; display:table-cell ; vertical-align: middle; height: 54px;}#dcm_bnrList_box01 figure + div p:first-of-type{font-size: 14px; color:#0044CC; font-weight: bold; text-decoration: underline;line-height: 1.2em; margin-bottom:2px;}#dcm_bnrList_box01 figure + div p:nth-of-type(2){font-size: 12px; color:#212121;line-height: 1.2em; margin-bottom:0;}#web #dcm_bnrList_box01{ padding: 0;}#web #dcm_bnrList_box01 a{display: block; width: 100%; padding: 10px; overflow: hidden; border-radius: 0; border: none; background-color: #FFF; box-sizing: border-box;}</style>';
 			for(var i = 0; i < len; i++) {
 				html += '<li>';
 				html += '<a href="' + data[i].url + '">';
@@ -27,4 +29,4 @@ window.onload = function() {
 		$('#dcm_bnrList_box01').hide();
 	
 	}
-};
+});
