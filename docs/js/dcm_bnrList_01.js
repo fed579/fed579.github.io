@@ -1,4 +1,4 @@
-$(function(){
+(function (){
 	var _UA = navigator.userAgent;
 	if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1) {
 		
@@ -29,4 +29,4 @@ $(function(){
 		$('#dcm_bnrList_box01').hide();
 	
 	}
-});
+})();
