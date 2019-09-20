@@ -13,7 +13,7 @@ $(function(){
 			for(var i = 0; i < len; i++) {
 				html += '<li>';
 				html += '<a href="' + data[i].url + '">';
-				html += '<figure><img src="' + data[i].image + '" alt="image"></figure>';
+				html += '<figure><img src="' + data[i].image + '" alt="image" width="100%"></figure>';
 				html += '<div>';
 				html += '<p>' + data[i].title + '</p>';
 				html += '<p>' + data[i].content + '</p>';
