@@ -1,6 +1,6 @@
 ﻿[
-{"id":"1","url":"https://apps.apple.com/jp/app/id1439029720","image":"https://fed579.github.io/docs/img/sample1.png","title":"一二三四五六七八九〇一二三四五六","content":"一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八"},
-{"id":"2","url":"https://www.nttdocomo.co.jp/service/mymagazine/","image":"https://fed579.github.io/docs/img/sample2.png","title":"見出しタイトルは１６文字まで","content":"説明文は３８文字まで。あああああああああああああああああああああああああああ"},
-{"id":"3","url":"https://dpoint.jp/","image":"https://fed579.github.io/docs/img/sample3.png","title":"見出しタイトル見出しタイトル見出","content":"9月20日11時2分"},
-{"id":"4","url":"https://smt.docomo.ne.jp/","image":"https://fed579.github.io/docs/img/sample4.png","title":"見出しタイトル","content":"説明文説明文説明文説明文説明文説明文説明文説明文"}
+{"id":"1","url":"https://fed579.github.io/sample/test.html","image":"https://fed579.github.io/docs/img/sample1.png","title":"一二三四五六七八九〇一二三四五六","content":"一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八"},
+{"id":"2","url":"https://fed579.github.io/sample/test.html","image":"https://fed579.github.io/docs/img/sample2.png","title":"見出しタイトルは１６文字まで","content":"説明文は３８文字まで。あああああああああああああああああああああああああああ"},
+{"id":"3","url":"https://fed579.github.io/sample/test.html","image":"https://fed579.github.io/docs/img/sample3.png","title":"見出しタイトル見出しタイトル見出","content":"9月20日11時2分"},
+{"id":"4","url":"https://fed579.github.io/sample/test.html","image":"https://fed579.github.io/docs/img/sample4.png","title":"見出しタイトル","content":"説明文説明文説明文説明文説明文説明文説明文説明文"}
 ]
