@@ -2,7 +2,7 @@
 	var _UA = navigator.userAgent;
 	if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1) {
 		
-		$.getJSON('https://fed579.github.io/docs/bnrList_01.json', {
+		$.getJSON('https://fed579.github.io/docs/null.json', {
 				ts: new Date().getTime()
 		})
 		
@@ -28,6 +28,11 @@
 				html += '</ul>';
 				box1.html(html);
 			}else{console.log('nodata');}	
+		})
+		.fail(function(jqXHR, textStatus, errorThrown){
+			
+			console.log('nodata');	
+			
 		});
 	
 	}else{
