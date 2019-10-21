@@ -7,7 +7,7 @@
 		}, function(data) {
 			if(data.length === 0){
 			   
-			   $('#dcm_bnrList_box01').text('データない');
+			console.log('データないよ');
 			}else{
 			var
 			box1 = $('#dcm_bnrList_box01'),
