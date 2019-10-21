@@ -7,7 +7,7 @@
 		})
 		
 		.done(function(data) {
-			//if(data.length){
+			if(data.length){
 
 				var
 				box1 = $('#dcm_bnrList_box01'),
@@ -27,11 +27,10 @@
 				}
 				html += '</ul>';
 				box1.html(html);
-			//}else{console.log('nodata');}	
+			}else{$('#dcm_bnrList_box01').hide();}	
 		})
 		.fail(function(jqXHR, textStatus, errorThrown){
-			
-			console.log('nodata');	
+			$('#dcm_bnrList_box01').hide();
 			
 		});
 	
