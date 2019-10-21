@@ -5,10 +5,8 @@
 		$.getJSON('https://fed579.github.io/docs/null.json', {
 				ts: new Date().getTime()
 		}, function(data) {
-			if(data.length < 1){
-			   
-			console.log('データないよ');
-			}else{
+			if(data.length){
+
 			var
 			box1 = $('#dcm_bnrList_box01'),
 			len = data.length;
@@ -27,7 +25,7 @@
 			}
 			html += '</ul>';
 			box1.html(html);
-		}
+			}else{console.log('nodata');}	
 		});
 	
 	}else{
