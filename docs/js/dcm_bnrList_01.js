@@ -4,7 +4,11 @@
 		
 		$.getJSON('https://fed579.github.io/docs/null.json', {
 				ts: new Date().getTime()
-			}, function(data) {
+		}, function(data) {
+			if(data.length === 0){
+			   
+			   $('#dcm_bnrList_box01').text('データない');
+			}else{
 			var
 			box1 = $('#dcm_bnrList_box01'),
 			len = data.length;
@@ -23,6 +27,7 @@
 			}
 			html += '</ul>';
 			box1.html(html);
+		}
 		});
 	
 	}else{
