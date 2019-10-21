@@ -5,7 +5,7 @@
 		$.getJSON('https://fed579.github.io/docs/null.json', {
 				ts: new Date().getTime()
 		}, function(data) {
-			if(data.length === 0){
+			if(data.length == 0){
 			   
 			console.log('データないよ');
 			}else{
