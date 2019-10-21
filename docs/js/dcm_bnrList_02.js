@@ -8,6 +8,7 @@
 			var
 			box2 = $('#dcm_bnrList_box02'),
 			len = data.length;
+			console.log(len);
 			html = '<ul>';
 			html += '<style>#dcm_bnrList_box02 *{margin:0;padding:0;border:0;box-sizing: border-box;list-styl-type: none;text-decoration: none; box-sizing: content-box;}';
 			html += '#dcm_bnrList_box02{margin: 10px 8px;}';
