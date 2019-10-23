@@ -1,7 +1,7 @@
 (function (){
 	var box2 = $('#dcm_bnrList_box02');
-	var _UA = window.navigator.userAgent.toLowerCase();
-	if ('ontouchend' in document && _UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1 || _UA.indexOf('macintosh') > -1) {
+	var _UA = navigator.userAgent;
+	if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1) {
 		$.getJSON('https://fed579.github.io/docs/bnrList_02.json', {
 				ts: new Date().getTime()
 		})
