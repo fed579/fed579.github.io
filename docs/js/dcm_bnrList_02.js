@@ -1,19 +1,18 @@
 (function (){
+	var box2 = $('#dcm_bnrList_box02');
 	var _UA = navigator.userAgent;
 	if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1) {
-		//$.getJSON('https://fed579.github.io/docs/bnrList_02.json', {
-		$.getJSON('https://stg.media-app.jp/dmenu/no.json', {
+		$.getJSON('https://fed579.github.io/docs/bnrList_02.json', {
 				ts: new Date().getTime()
 		})
-			
 		.done(function(data) {
-			var
-			box2 = $('#dcm_bnrList_box02'),
-			html = '<ul>';
-			html += '<style>#dcm_bnrList_box02 *{margin:0;padding:0;border:0;box-sizing: border-box;list-styl-type: none;text-decoration: none; box-sizing: content-box;}';
-			html += '#dcm_bnrList_box02{margin: 10px 8px;}';
-			html += '#dcm_bnrList_box02 li{margin-bottom: 5px;} #dcm_bnrList_box02 li:last-child{margin-bottom:0;}';
+			var html = '<style>';
+			html += '#dcm_bnrList_box02 *{margin:0;padding:0;border:0;box-sizing: border-box;list-styl-type: none;text-decoration: none; box-sizing: content-box;}';
+			html += '#dcm_bnrList_box02 li{margin: 0px 8px 5px;}';
+			html += '#dcm_bnrList_box02 li:first-child{margin-top:10px;}';
+			html += '#dcm_bnrList_box02 li:last-child{margin-bottom:10px;}';
 			html += '#dcm_bnrList_box02 li a{display: block;}</style>';
+			html += '<ul>';
 			for(var i in data) {
 				html += '<li>';
 				html += '<a href="' + data[i].url + '">';
@@ -25,10 +24,10 @@
 			box2.html(html);
 		})
 		.fail(function(jqXHR, textStatus, errorThrown){
-			$('#dcm_bnrList_box02').hide();
+			box2.hide();
 		});
 
 	}else{
-		$('#dcm_bnrList_box02').hide();	
+		box2.hide();
 	}
 })();
